@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-in">
+    <a class="wordmark" href="/">{{ site.wordmark }}</a>
+    <nav>
+      <a href="/guide/" {% if page.url == "/guide/" %}class="on"{% endif %}>Guide</a>
+      <a href="/faq/" {% if page.url == "/faq/" %}class="on"{% endif %}>FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+{{ content | safe }}
+</main>
+
+<footer>
+  <div class="foot-in">
+    <span>{{ site.wordmark }}</span>
+    <a href="/">Start</a>
+    <a href="/faq/">FAQ</a>
+  </div>
+</footer>
+
+<script>
+  // When a link points at a specific question, open it and scroll to it.
+  function openTarget(){
+    var id = location.hash.slice(1);
+    if(!id) return;
+    var el = document.getElementById(id);
+    if(el && el.tagName === 'DETAILS'){
+      el.open = true;
+      el.scrollIntoView({block:'start'});
+    }
+  }
+  openTarget();
+  window.addEventListener('hashchange', openTarget);
+</script>
+
+</body>
+</html>

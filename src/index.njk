@@ -1,0 +1,55 @@
+---
+layout: base.njk
+title: "Truth Access Technology"
+description: "Truth Access Technology — guide, use cases and frequently asked questions."
+---
+<div class="top">
+  <p class="eyebrow">{{ site.eyebrow }}</p>
+  <h1>{{ site.homeTitle }}</h1>
+
+  <div class="rows" style="margin-top:2rem">
+  {%- set homeFaq = collections.faq | onHome | byOrder -%}
+  {%- for item in homeFaq %}
+    <details id="{{ item.data.anchor }}" {% if loop.first %}open{% endif %}>
+      <summary>
+        <span class="idx">{{ loop.index | pad }}</span>
+        <span class="q">{{ item.data.title }}</span>
+        <span class="sign">+</span>
+      </summary>
+      <div class="a">{{ item.templateContent | safe }}</div>
+    </details>
+  {%- endfor %}
+  </div>
+
+  <div class="actions">
+    <a class="btn" href="/faq/">{{ site.seeAllLabel }}</a>
+  </div>
+</div>
+
+<section class="band">
+  <p class="eyebrow">Videos</p>
+  <div class="actions" style="margin-top:.4rem">
+    <a class="btn" href="{{ site.videoActivationUrl }}">{{ site.videoActivationLabel }}</a>
+    <a class="btn ghost" href="{{ site.videoInstructionsUrl }}">{{ site.videoInstructionsLabel }}</a>
+  </div>
+</section>
+
+<div class="guide-block">
+  <div class="gb-head"><h2>{{ site.guideBlockTitle }}</h2></div>
+  <div class="rows">
+  {%- set homeGuide = collections.guide | onHome -%}
+  {%- set homeGuide = homeGuide | sort(false, false, "data.homeOrder") -%}
+  {%- for ch in homeGuide %}
+    <a class="row" href="/guide/#{{ ch.data.anchor }}">
+      <span class="idx">{{ loop.index | pad }}</span>
+      <span class="q">{{ ch.data.homeLabel or ch.data.title }}</span>
+      <span class="sign">&rarr;</span>
+    </a>
+  {%- endfor %}
+  </div>
+</div>
+
+<div class="faq-bar">
+  <p>{{ site.faqBarText }}</p>
+  <a class="btn" href="/faq/">Read the FAQ</a>
+</div>

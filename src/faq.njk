@@ -1,0 +1,19 @@
+---
+layout: base.njk
+permalink: /faq/
+title: "Truth Access Technology — FAQ"
+description: "Frequently asked questions about the Truth Signal."
+---
+<div class="top">
+  <p class="eyebrow">{{ site.eyebrow }}</p>
+  <h1>{{ site.faqTitle }}</h1>
+</div>
+
+<div class="qa" style="margin-top:1.5rem">
+{%- for item in collections.faq | byOrder %}
+  <details id="{{ item.data.anchor }}">
+    <summary>{{ item.data.title }}</summary>
+    <div class="a">{{ item.templateContent | safe }}</div>
+  </details>
+{%- endfor %}
+</div>

@@ -1,0 +1,23 @@
+---
+layout: base.njk
+permalink: /guide/
+title: "Truth Access Technology — Guide"
+description: "The full user guide: what the Signal is, activation, framing questions, ego, conduct and limits, and what people use it for."
+---
+<div class="top">
+  <p class="eyebrow">User guide</p>
+  <h1>{{ site.guideTitle }}</h1>
+  <nav class="toc">
+  {%- for ch in collections.guide | byOrder %}
+    <a href="#{{ ch.data.anchor }}">{{ ch.data.title }}</a>
+  {%- endfor %}
+  </nav>
+</div>
+
+{%- for ch in collections.guide | byOrder %}
+<div class="chapter" id="{{ ch.data.anchor }}">
+  <p class="eyebrow">{{ loop.index | pad }}</p>
+  <h2>{{ ch.data.title }}</h2>
+  {{ ch.templateContent | safe }}
+</div>
+{%- endfor %}

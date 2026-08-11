@@ -1,0 +1,142 @@
+media:
+  input: src/assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: faq
+    label: FAQ questions
+    type: collection
+    path: src/faq
+    filename: '{fields.order}-{fields.anchor}.md'
+    exclude: [src/faq/faq.json]
+    view:
+      fields: [order, title, onHome]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: title
+        label: Question
+        type: string
+        required: true
+      - name: order
+        label: Position in the list
+        type: number
+        required: true
+        description: Lower numbers appear first. Change these to reorder the FAQ.
+      - name: onHome
+        label: Show on the home page
+        type: boolean
+        default: false
+        description: The home page shows the questions ticked here, in position order.
+      - name: anchor
+        label: Link name
+        type: string
+        required: true
+        pattern:
+          regex: '^[a-z0-9-]+$'
+          message: Lowercase letters, numbers and hyphens only, no spaces.
+        description: Used for links from elsewhere on the site, e.g. what-is-ego. Changing it breaks existing links.
+      - name: body
+        label: Answer
+        type: rich-text
+        required: true
+
+  - name: guide
+    label: Guide chapters
+    type: collection
+    path: src/guide
+    filename: '{fields.order}-{fields.anchor}.md'
+    exclude: [src/guide/guide.json]
+    view:
+      fields: [order, title, onHome]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: title
+        label: Chapter heading
+        type: string
+        required: true
+      - name: order
+        label: Position in the guide
+        type: number
+        required: true
+        description: Lower numbers appear first. The 01 / 02 / 03 labels follow this automatically.
+      - name: onHome
+        label: Show in the home page guide box
+        type: boolean
+        default: false
+      - name: homeLabel
+        label: Shorter name for the home page box
+        type: string
+        description: Optional. Leave empty to use the chapter heading.
+      - name: homeOrder
+        label: Position inside the home page guide box
+        type: number
+        description: Only used when the tick box above is on.
+      - name: anchor
+        label: Link name
+        type: string
+        required: true
+        pattern:
+          regex: '^[a-z0-9-]+$'
+          message: Lowercase letters, numbers and hyphens only, no spaces.
+        description: Used for links from elsewhere on the site, e.g. ego. Changing it breaks existing links.
+      - name: body
+        label: Chapter text
+        type: rich-text
+        required: true
+
+  - name: settings
+    label: Site settings
+    type: file
+    path: src/_data/site.json
+    fields:
+      - name: wordmark
+        label: Name in the top bar and footer
+        type: string
+      - name: eyebrow
+        label: Small line above the heading
+        type: string
+      - name: homeTitle
+        label: Home page heading
+        type: string
+      - name: faqTitle
+        label: FAQ page heading
+        type: string
+      - name: guideTitle
+        label: Guide page heading
+        type: string
+      - name: guideBlockTitle
+        label: Heading on the home page guide box
+        type: string
+      - name: faqBarText
+        label: Text in the bar at the bottom of the home page
+        type: string
+      - name: seeAllLabel
+        label: Label on the button under the home page questions
+        type: string
+      - name: videoActivationLabel
+        label: Activation video — button label
+        type: string
+      - name: videoActivationUrl
+        label: Activation video — link
+        type: string
+      - name: videoInstructionsLabel
+        label: Instructions video — button label
+        type: string
+      - name: videoInstructionsUrl
+        label: Instructions video — link
+        type: string
+      - name: youtube
+        label: YouTube link
+        type: string
+      - name: instagram
+        label: Instagram link
+        type: string
+      - name: tiktok
+        label: TikTok link
+        type: string
