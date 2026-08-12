@@ -9,7 +9,7 @@ description: "The full user guide: what the Signal is, activation, framing quest
   <h1>{{ site.guideTitle }}</h1>
   <nav class="toc">
   {%- for ch in collections.guide | byOrder %}
-    <a href="#{{ ch.data.anchor }}">{{ ch.data.title }}</a>
+    <a href="#{{ ch.data.anchor }}"><span class="toc-n">{{ loop.index | pad }}</span><span>{{ ch.data.title }}</span></a>
   {%- endfor %}
   </nav>
 </div>
