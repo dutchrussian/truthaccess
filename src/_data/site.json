@@ -10,8 +10,8 @@
   "videoActivationLabel": "Activation video",
   "videoActivationUrl": "#https://www.youtube.com/watch?v=CywesNUqq7g",
   "videoInstructionsLabel": "Instructions video",
-  "videoInstructionsUrl": "https://www.youtube.com/watch?v=vmX_Z56d4Ws&t=20s",
-  "youtube": "https://www.youtube.com/@TruthAccessTechnology",
-  "instagram": "https://www.instagram.com/truthaccesstech",
-  "tiktok": "https://www.tiktok.com/@truthaccesstech"
+  "videoInstructionsUrl": "#https://www.youtube.com/watch?v=vmX_Z56d4Ws&t=20s",
+  "youtube": "#https://www.youtube.com/@TruthAccessTechnology",
+  "instagram": "#https://www.instagram.com/truthaccesstech",
+  "tiktok": "#https://www.tiktok.com/@truthaccesstech"
 }
