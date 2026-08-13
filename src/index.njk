@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: "Truth Access Technology"
-description: "Truth Access Technology — guide, use cases and frequently asked questions."
+description: "Truth Access Technology — wiki, use cases and frequently asked questions."
 ---
 <div class="top">
   <p class="eyebrow">{{ site.eyebrow }}</p>
@@ -40,7 +40,7 @@ description: "Truth Access Technology — guide, use cases and frequently asked 
   {%- set homeGuide = collections.guide | onHome -%}
   {%- set homeGuide = homeGuide | sort(false, false, "data.homeOrder") -%}
   {%- for ch in homeGuide %}
-    <a class="row" href="/guide/#{{ ch.data.anchor }}">
+    <a class="row" href="/wiki/#{{ ch.data.anchor }}">
       <span class="idx">{{ loop.index | pad }}</span>
       <span class="q">{{ ch.data.homeLabel or ch.data.title }}</span>
       <span class="sign">&rarr;</span>

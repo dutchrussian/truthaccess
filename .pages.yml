@@ -44,7 +44,7 @@ content:
         required: true
 
   - name: guide
-    label: Guide chapters
+    label: Wiki chapters
     type: collection
     path: src/guide
     filename: '{fields.order}-{fields.anchor}.md'
@@ -61,12 +61,12 @@ content:
         type: string
         required: true
       - name: order
-        label: Position in the guide
+        label: Position in the wiki
         type: number
         required: true
         description: Lower numbers appear first. The 01 / 02 / 03 labels follow this automatically.
       - name: onHome
-        label: Show in the home page guide box
+        label: Show in the home page wiki box
         type: boolean
         default: false
       - name: homeLabel
@@ -74,7 +74,7 @@ content:
         type: string
         description: Optional. Leave empty to use the chapter heading.
       - name: homeOrder
-        label: Position inside the home page guide box
+        label: Position inside the home page wiki box
         type: number
         description: Only used when the tick box above is on.
       - name: anchor
@@ -108,10 +108,10 @@ content:
         label: FAQ page heading
         type: string
       - name: guideTitle
-        label: Guide page heading
+        label: Wiki page heading
         type: string
       - name: guideBlockTitle
-        label: Heading on the home page guide box
+        label: Heading on the home page wiki box
         type: string
       - name: faqBarText
         label: Text in the bar at the bottom of the home page
