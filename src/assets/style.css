@@ -76,6 +76,22 @@ em,i,cite{font-style:normal}
 }
 .mast nav a:hover,.mast nav a.on{background:var(--ink);color:var(--paper)}
 
+/* social icons in the top bar */
+.mast nav a.ico{
+  padding:0;width:2.05rem;height:2.05rem;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.mast nav a.ico svg{width:1.05rem;height:1.05rem;display:block}
+.mast nav a.ico svg rect,
+.mast nav a.ico svg circle,
+.mast nav a.ico svg path{
+  fill:none;stroke:currentColor;stroke-width:1.7;
+  stroke-linejoin:round;vector-effect:non-scaling-stroke;
+}
+.mast nav a.ico svg .dot,
+.mast nav a.ico svg .fill{fill:currentColor;stroke:none}
+.mast nav a.ico:hover{background:var(--ink);color:var(--paper)}
+
 main{max-width:62rem;margin:0 auto;padding:0 var(--step) 5rem}
 .top{padding:2.6rem 0 2rem}
 .band{padding:2.8rem 0;border-top:1px solid var(--rule)}
@@ -184,6 +200,7 @@ blockquote p{margin:0}
 .qa .a > :last-child{margin-bottom:0}
 
 footer{border-top:1px solid var(--rule);padding:2rem var(--step) 3.5rem}
+
 .foot-in{
   max-width:62rem;margin:0 auto;font-family:"Archivo",system-ui,sans-serif;font-size:.7rem;
   letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);

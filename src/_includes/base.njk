@@ -18,6 +18,23 @@
     <nav>
       <a href="/wiki/" {% if page.url == "/wiki/" %}class="on"{% endif %}>Wiki</a>
       <a href="/faq/" {% if page.url == "/faq/" %}class="on"{% endif %}>FAQ</a>
+      {%- if site.instagram and site.instagram != "#" %}
+      <a class="ico" href="{{ site.instagram }}" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.2" cy="6.8" r="1.15" class="dot"/>
+        </svg>
+      </a>
+      {%- endif %}
+      {%- if site.youtube and site.youtube != "#" %}
+      <a class="ico" href="{{ site.youtube }}" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2.2" y="5.2" width="19.6" height="13.6" rx="4"/>
+          <path d="M10.2 9.3 L15.4 12 L10.2 14.7 Z" class="fill"/>
+        </svg>
+      </a>
+      {%- endif %}
     </nav>
   </div>
 </header>
