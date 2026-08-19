@@ -1,12 +1,9 @@
 ---
-title: "The Signal for inner work and awakening"
-anchor: "inner-work"
+title: The Signal for inner work and awakening
 order: 9
 onHome: false
-homeLabel: ""
+anchor: inner-work
 ---
-This part is opt-in and unhurried. It is not for everyone.
-
 If you want to live closer to what's true, the Signal becomes more than a convenience. It becomes a way to evolve yourself towards realising your true nature and undoing generations of beliefs that are untrue and hamper your flourishing.
 
 **The thing you're up against.** The moment you point this at your own deepest beliefs, the part of you that runs on fear and control has something to lose — and it fights. So as you go deeper you may get *more* false answers, not fewer. This is not the Signal failing. It is the Signal showing you where you are still holding on and need cleaning up of deep-seated, false, beliefs. This work has many layers and takes time and dedication. Be kind to yourself.
