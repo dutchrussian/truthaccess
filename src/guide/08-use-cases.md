@@ -1,23 +1,26 @@
 ---
-title: "What people use it for"
-anchor: "use-cases"
+title: What people use it for
 order: 8
 onHome: true
-homeLabel: "What people use it for"
+homeLabel: What people use it for
 homeOrder: 1
+anchor: use-cases
 ---
 ### Work, craft, alignment
 
-- In a creative flow — writing, designing, composing, scientific work — test the next line or choice if in doubt, yes/no, and keep moving. Write your options down, run each one.
-- Deciding whether spending time on activity/ content/ writing/ appointment aligns with your goals or not. Save time.
+- In a creative flow — writing, designing, composing, scientific work — test the next line or choice if in doubt, yes/no, and keep moving. Write your options down, run each one or grade them by probability of truth-alignment / success.
+- Save time: Deciding whether spending time on activity/ content/ writing/ appointment aligns with your goals or not. 
 - Bigger life choices: Does this opportunity align with my highest desires/ my higher self pattern/plan for this life?
-- Can I use this signal to connect to my guide?
+- Can I use this signal to connect and get insight from my guide for this project?
 - Is my action driven by subconscious fear/ insecurity or truth?
 - Is taking this action truer for me than not taking it?
+- Small group cooperation: If serveral people are signal users and you are creating something together you have an extra way to double check process and each others biases.
+- Timing: Is my ego pushing this more than it needs to go? Or - Am I being too timid with my actions and is fear holding me back?
 
 ### Recurring thoughts, beliefs, responses
 
-Anything that keeps taking up mind space can be dug into and resolved with "Is it true?". If you get false, get quiet, let an alternative or opposite statement arrive as a thought, then test that instead.
+- Anything that keeps taking up mind space can be dug into and resolved with "Is it true?". If you get false, get quiet, let an alternative or opposite statement arrive as a thought, then test that instead.
+- Is my behaviour towards x justified or is it based on an untruth?
 
 ### Resolving family dispute
 
@@ -25,7 +28,7 @@ Anything that keeps taking up mind space can be dug into and resolved with "Is i
 
 If you truly want resolution over ego gratification – signal will give you the truth if you ask for it.
 
-When you are unsure about best course of action or response in a relational issue, you can ask things like: Is it more truth aligned for me to tell him exactly how I feel? Wait for answer. If no, then you try another response. Usually, the higher self response comes as a thought, as soon as desire for resolution is sincere. Then you could test that thought, if you got it right.
+When you are unsure about best course of action or response in a relational issue, you can ask things like: Is it more truth aligned for me to tell him exactly how I feel? Wait for the answer. If answer is no, then you try another option or thought. Usually, the higher self response comes as a thought, as soon as desire for resolution is sincere. Then you could test that thought, to check if you got it right.
 
 Often just asking whether you should wait, or if it doesn't matter when you do something or not, brings relief.
 
@@ -34,17 +37,19 @@ Often just asking whether you should wait, or if it doesn't matter when you do s
 The Signal is for **orientation, not diagnosis.**
 
 - If there is a health scare, calibrate your own state before you act: *"I am calm enough to receive truth."* If false, breathe and come back to it.
-- *"This supplement is doing something for me," "this practice is net positive,"* or *"it's doing nothing."*
+- *"This supplement or cream is addig a benefit  for me" or "it's doing nothing", "this practice is net positive,"* or *"it's doing nothing."*
 
-**The Signal is not a doctor, and not a reason to delay one.** For pain, injury — you get help, calmly.
+ For pain, injury — you get help from a professional, calmly.
 
 ### News, politics, the feed
 
-First and best question: *"Is this relevant to me, or a distraction? Does anyone benefit from me being pulled into it?"* Run what you hear through the Signal; expect a lot of blanks, especially for future predictions.
+First and best question: *"Is this relevant to me, or a distraction?" *  
+*"Does anyone benefit from me being pulled into it?"*   
+For trying to get future predictions on world/ geo politics out of curiosity- Expect a lot of blanks.
 
 ### Day to day
 
-- Is the food I am cooking ready now, more spice or less?
+- Is the food I am cooking ready now? Shall I add more spice?
 - Is someone on their way (when they are 5 minutes late), should I call or leave it if you want to work on toning down hypochondriac tendencies.
 - Plants: does this plant want water now, or weekly, or fortnightly? Does it need feeding? You can narrow down the type of plant food.
 
