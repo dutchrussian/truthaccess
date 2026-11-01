@@ -76,8 +76,8 @@ number, a tick box for the home page box, and a shorter label to use there. The
 `01` `02` `03` numbers on the page follow the position numbers on their own.
 
 **Site settings.** One screen holding the page headings, the wordmark, the two
-video links and the three social links. This is where you paste the YouTube,
-Instagram and TikTok addresses when you have them.
+video links and the two social links. This is where you paste the YouTube
+and Instagram addresses when you have them.
 
 ### Two things to be careful with
 

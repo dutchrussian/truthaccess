@@ -5,6 +5,22 @@ description: "Truth Access Technology — wiki, use cases and frequently asked q
 ---
 <div class="top">
   <p class="eyebrow">{{ site.eyebrow }}</p>
+
+  <div class="videos">
+    <a class="video-card" href="{{ site.videoActivationUrl }}">
+      <span class="vc-play" aria-hidden="true">&#9654;</span>
+      <span class="vc-label">{{ site.videoActivationLabel }}</span>
+      <span class="vc-go">Watch &rarr;</span>
+    </a>
+    <a class="video-card alt" href="{{ site.videoInstructionsUrl }}">
+      <span class="vc-play" aria-hidden="true">&#9654;</span>
+      <span class="vc-label">{{ site.videoInstructionsLabel }}</span>
+      <span class="vc-go">Watch &rarr;</span>
+    </a>
+  </div>
+</div>
+
+<section class="band">
   <h1>{{ site.homeTitle }}</h1>
 
   <div class="rows" style="margin-top:2rem">
@@ -24,25 +40,16 @@ description: "Truth Access Technology — wiki, use cases and frequently asked q
   <div class="actions">
     <a class="btn" href="/faq/">{{ site.seeAllLabel }}</a>
   </div>
-</div>
-
-<section class="band">
-  <p class="eyebrow">Videos</p>
-  <div class="actions" style="margin-top:.4rem">
-    <a class="btn" href="{{ site.videoActivationUrl }}">{{ site.videoActivationLabel }}</a>
-    <a class="btn ghost" href="{{ site.videoInstructionsUrl }}">{{ site.videoInstructionsLabel }}</a>
-  </div>
 </section>
 
 <div class="guide-block">
   <div class="gb-head"><h2>{{ site.guideBlockTitle }}</h2></div>
   <div class="rows">
-  {%- set homeGuide = collections.guide | onHome -%}
-  {%- set homeGuide = homeGuide | sort(false, false, "data.homeOrder") -%}
-  {%- for ch in homeGuide %}
+  {%- set allGuide = collections.guide | byOrder -%}
+  {%- for ch in allGuide %}
     <a class="row" href="/wiki/#{{ ch.data.anchor }}">
       <span class="idx">{{ loop.index | pad }}</span>
-      <span class="q">{{ ch.data.homeLabel or ch.data.title }}</span>
+      <span class="q">{{ ch.data.title }}</span>
       <span class="sign">&rarr;</span>
     </a>
   {%- endfor %}

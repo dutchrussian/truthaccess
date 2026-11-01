@@ -137,6 +137,3 @@ content:
       - name: instagram
         label: Instagram link
         type: string
-      - name: tiktok
-        label: TikTok link
-        type: string

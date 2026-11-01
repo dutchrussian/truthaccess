@@ -138,6 +138,24 @@ main{max-width:62rem;margin:0 auto;padding:0 var(--step) 5rem}
 .btn.ghost{background:transparent;color:var(--ink)}
 .btn.ghost:hover{background:var(--ink);color:var(--paper)}
 
+/* video cards on home */
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.4rem}
+.video-card{
+  display:flex;flex-direction:column;justify-content:space-between;gap:2.2rem;
+  min-height:13rem;padding:1.8rem var(--step);text-decoration:none;
+  background:var(--ink);color:var(--paper);border:1.5px solid var(--ink);
+  transition:background .15s,border-color .15s;
+}
+.video-card.alt{background:transparent;color:var(--ink)}
+.video-card:hover{background:var(--true);border-color:var(--true);color:var(--paper)}
+.vc-play{
+  width:3.4rem;height:3.4rem;border:1.5px solid currentColor;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;padding-left:.2rem;
+}
+.vc-label{font-family:"Archivo",system-ui,sans-serif;font-size:clamp(1.4rem,3vw,1.9rem);font-weight:500;line-height:1.15}
+.vc-go{font-family:"Archivo",system-ui,sans-serif;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+@media (max-width:640px){.videos{grid-template-columns:1fr}.video-card{min-height:10rem}}
+
 /* guide block on home */
 .guide-block{border:1.5px solid var(--ink);margin:2.8rem 0 0}
 .guide-block .gb-head{
