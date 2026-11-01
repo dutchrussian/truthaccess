@@ -5,7 +5,7 @@ order: 2
 onHome: false
 homeLabel: ""
 ---
-Activation is voluntary and happens once, while following the video. Nothing is installed against your will and if you will not want to use it anymore – you just don't and it's as if it doesn't exist.
+Activation is voluntary and happens once, while following the [video]({{ site.videoActivationUrl }}). Nothing is installed against your will and if you will not want to use it anymore – you just don't and it's as if it doesn't exist.
 
 1. Sit. Close your eyes. A couple of steady, natural, breaths.
 2. When you are ready, say it out loud: **"Activate Truth Signal."**
